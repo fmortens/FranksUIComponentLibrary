@@ -12,7 +12,9 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "FrankButtons",
-            targets: ["RaisedButton"]),
+            targets: ["RaisedButton", "RoundButton"]
+        )
+        
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,7 +26,12 @@ let package = Package(
         .target(
             name: "RaisedButton",
             dependencies: [],
-            path: "Sources/Buttons"
+            path: "Sources/Buttons/RaisedButton"
+        ),
+        .target(
+            name: "RoundButton",
+            dependencies: [],
+            path: "Sources/Buttons/RoundButton"
         )
     ]
 )
