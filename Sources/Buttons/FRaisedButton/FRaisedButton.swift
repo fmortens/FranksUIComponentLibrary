@@ -1,7 +1,7 @@
 import SwiftUI
 
 @available(iOS 13.0, macOS 10.15, *)
-public struct RaisedButton: View {
+public struct FRaisedButton: View {
     
     let titleText: String
     let foregroundColor: Color
@@ -50,17 +50,17 @@ public struct RaisedButton: View {
 
 
 @available(iOS 13.0, macOS 10.15, *)
-struct RaisedButton_Previews: PreviewProvider {
+public struct FRaisedButton_Previews: PreviewProvider {
     
-    static var previews: some View {
+    public static var previews: some View {
         Group {
-            RaisedButton(titleText: "Tap me", foregroundColor: .gray, backgroundColor: .white) {
+            FRaisedButton(titleText: "Tap me", foregroundColor: .gray, backgroundColor: .white) {
                 print("Button was tapped")
             }
                 .previewLayout(PreviewLayout.sizeThatFits)
                 .padding()
             
-            RaisedButton(titleText: "Tap me 2", foregroundColor: .green, backgroundColor: Color(Color.RGBColorSpace.sRGB, red: 0.8, green: 1, blue: 0.8, opacity: 1)) {
+            FRaisedButton(titleText: "Tap me 2", foregroundColor: .green, backgroundColor: Color(Color.RGBColorSpace.sRGB, red: 0.8, green: 1, blue: 0.8, opacity: 1)) {
                 print("Button 2 was tapped")
             }
                 .previewLayout(PreviewLayout.sizeThatFits)

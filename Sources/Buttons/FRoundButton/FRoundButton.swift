@@ -1,6 +1,7 @@
 import SwiftUI
 
-struct RoundButton: View {
+@available(iOS 13.0, macOS 10.15, *)
+public struct FRoundButton: View {
     
     let titleText: String
     let handleDidTap: () -> Void
@@ -13,17 +14,20 @@ struct RoundButton: View {
         self.handleDidTap = handleDidTap
     }
     
-    var body: some View {
+    public var body: some View {
         Button(titleText) {
             handleDidTap()
         }
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        RoundButton(titleText: "Tap me!") {
+@available(iOS 13.0, macOS 10.15, *)
+public struct FRoundButton_Previews: PreviewProvider {
+    public static var previews: some View {
+        FRoundButton(titleText: "Tap me!") {
             print("Tapped!")
         }
+        .previewLayout(PreviewLayout.sizeThatFits)
+        .padding()
     }
 }
