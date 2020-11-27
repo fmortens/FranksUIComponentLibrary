@@ -25,7 +25,7 @@ public struct FRoundButton: View {
 public struct FRoundButton_Previews: PreviewProvider {
     public static var previews: some View {
         FRoundButton(titleText: "Tap me!") {
-            print("Tapped!dfg")
+            print("Tapped!")
         }
         .previewLayout(PreviewLayout.sizeThatFits)
         .padding()
