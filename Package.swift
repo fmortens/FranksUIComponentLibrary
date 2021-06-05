@@ -10,12 +10,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "FRaisedButton",
-            targets: ["FRaisedButton"]
-        ),
-        .library(
-            name: "FRoundButton",
-            targets: ["FRoundButton"]
+            name: "FranksUIComponents",
+            targets: ["FRaisedButton", "FRoundButton"]
         )
     ],
     dependencies: [],
