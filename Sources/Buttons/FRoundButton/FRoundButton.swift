@@ -18,6 +18,10 @@ public struct FRoundButton: View {
         Button(titleText) {
             handleDidTap()
         }
+        .padding()
+        .foregroundColor(.blue)
+        .background(Color.green, alignment: .center)
+        .cornerRadius(10)
     }
 }
 
